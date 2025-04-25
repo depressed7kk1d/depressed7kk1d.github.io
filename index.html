@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чат с ИИ Агентом — Алгоритмика</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <style>
+    html, body, #n8n-chat {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --chat--color-primary: #6c38cc;
+      --chat--color-primary-shade-50: #5a2cb2;
+      --chat--color-primary-shade-100: #4a2199;
+
+      --chat--color-secondary: #ffb703;
+      --chat--color-secondary-shade-50: #ffa500;
+      --chat--color-white: #ffffff;
+      --chat--color-light: #f9f9f9;
+      --chat--color-dark: #1a1a1a;
+      --chat--color-disabled: #888888;
+      --chat--color-typing: #444444;
+
+      --chat--window--width: 420px;
+      --chat--window--height: 600px;
+      --chat--border-radius: 1rem;
+
+      --chat--header--background: var(--chat--color-primary);
+      --chat--header--color: var(--chat--color-white);
+      --chat--heading--font-size: 1.6rem;
+
+      --chat--message--bot--background: var(--chat--color-light);
+      --chat--message--bot--color: var(--chat--color-dark);
+      --chat--message--user--background: var(--chat--color-secondary);
+      --chat--message--user--color: var(--chat--color-dark);
+
+      --chat--toggle--background: var(--chat--color-primary);
+      --chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+      --chat--toggle--active--background: var(--chat--color-primary-shade-100);
+      --chat--toggle--color: var(--chat--color-white);
+      --chat--toggle--size: 64px;
+    }
+  </style>
+</head>
+<body>
+  <div id="n8n-chat"></div>
+
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://yourdomain.com/webhook/your-webhook-id', // Замени на свой URL вебхука
+      webhookConfig: {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      },
+      target: '#n8n-chat',
+      mode: 'window',
+      showWelcomeScreen: true,
+      initialMessages: [
+        'Привет! 👋',
+        'Я голосовой ИИ-агент Алгоритмики. Чем могу помочь?'
+      ],
+      i18n: {
+        en: {
+          title: 'Добро пожаловать в Алгоритмику! 👋',
+          subtitle: 'Спроси меня о курсах, расписании или заданиях — я помогу!',
+          getStarted: 'Новый вопрос',
+          inputPlaceholder: 'Введите сообщение...'
+        }
+      }
+    });
+  </script>
+</body>
+</html>
