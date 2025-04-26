@@ -1,0 +1,55 @@
+        body {
+            font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-container {
+            margin-bottom: 32px;
+            width: 150px; /* Control the logo container width */
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .instruction-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .instruction-box p {
+            margin: 0;
+            color: #4a4a4a;
+            text-align: center;
+        }
+        .highlight {
+            color: #854fff;
+            font-weight: 500;
+        }
+   
