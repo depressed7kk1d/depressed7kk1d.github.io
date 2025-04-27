@@ -1,25 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
     <!-- Widget Configuration -->
     <script>
         window.ChatWidgetConfig = {
             webhook: {
-                url: 'https://algoagent.ru/webhook/7bce0e01-e3ba-43f0-aa70-5cbe5823443c/chat',
+                url: 'https://n8n.nccio.co.uk/webhook/f406671e-c954-4691-b39a-66c90aa2f103/chat',
                 route: 'general'
             },
             branding: {
-                logo: '<your company logo URL>',
-                name: 'nocodecreative.io', // Your company name
-                welcomeText: 'Hi 👋, how can we help?', //Welcome message
-                responseTimeText: 'We typically respond right away' //Response time messag
+                logo: 'https://www.nocodecreative.io/wp-content/uploads/2025/01/cropped-New-Logo.png',
+                name: 'nocodecreative.io',
+                welcomeText: 'Hi 👋, how can we help?',
+                responseTimeText: 'We typically respond right away'
             },
             style: {
-                primaryColor: '#854fff', //Primary color
-                secondaryColor: '#6b3fd4', //Secondary color
-                position: 'right', //Position of the widget (left or right)
-                backgroundColor: '#ffffff', //Background color of the chat widget
-                fontColor: '#333333' //Text color for messages and interface
+                primaryColor: '#854fff',
+                secondaryColor: '#6b3fd4',
+                position: 'right',
+                backgroundColor: '#ffffff',
+                fontColor: '#333333'
             }
         };
     </script>
+
+    <!-- Include the chat widget script -->
     <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
-    <!-- Widget Script -->
-    
+
+</body>
+</html>
