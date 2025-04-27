@@ -1,17 +1,24 @@
-<!-- Этот скрипт подгружает чат-виджет -->
-<script>
-    window.ChatWidgetConfig = {
-        webhook: {
-            url: 'https://algoagent.ru/webhook/7bce0e01-e3ba-43f0-aa70-5cbe5823443c/chat',
-            route: 'general'
-        },
-        branding: {
-            logo: 'https://www.nocodecreative.io/wp-content/uploads/2025/01/cropped-New-Logo.png',
-            name: 'nocodecreative.io',
-            welcomeText: 'Hi 👋, how can we help?',
-            responseTimeText: 'We typically respond right away'
-        }
-    };
-</script>
-<script src="https://cdn.jsdelivr.net/gh/depressed7kk1d/my-chat-widget@main/chat-widget.js"></script>
-
+ <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://algoagent.ru/webhook/7bce0e01-e3ba-43f0-aa70-5cbe5823443c/chat',
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://brandfetch.com/algoritmika.rs?view=library&library=default&collection=logos&asset=idGqxwoLOE&utm_source=https%253A%252F%252Fbrandfetch.com%252Falgoritmika.rs&utm_medium=copyAction&utm_campaign=brandPageReferral',
+                name: 'nocodecreative.io', // Your company name
+                welcomeText: 'Hi 👋, how can we help?', //Welcome message
+                responseTimeText: 'We typically respond right away' //Response time message
+            },
+            style: {
+                primaryColor: '#854fff', //Primary color
+                secondaryColor: '#6b3fd4', //Secondary color
+                position: 'right', //Position of the widget (left or right)
+                backgroundColor: '#ffffff', //Background color of the chat widget
+                fontColor: '#333333' //Text color for messages and interface
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
+    <!-- Widget Script -->
