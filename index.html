@@ -1,41 +1,89 @@
-<!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя страница</title>
-    <!-- Здесь можно добавить стили или подключить файлы CSS -->
+    <title>Test The Widget - nocodecreative.io</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/geist-font/1.0.0/fonts/geist-sans/style.min.css">
+    <style>
+        body {
+            font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-container {
+            margin-bottom: 32px;
+            width: 150px; /* Control the logo container width */
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .instruction-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .instruction-box p {
+            margin: 0;
+            color: #4a4a4a;
+            text-align: center;
+        }
+        .highlight {
+            color: #854fff;
+            font-weight: 500;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Ваш контент будет здесь -->
-
-    <!-- Добавление конфигурации виджета чата -->
+<!-- Widget Configuration -->
     <script>
         window.ChatWidgetConfig = {
             webhook: {
-                url: 'https://algoagent.ru/webhook/7bce0e01-e3ba-43f0-aa70-5cbe5823443c/chat',
+                url: 'https://n8n.nccio.co.uk/webhook/f406671e-c954-4691-b39a-66c90aa2f103/chat',
                 route: 'general'
             },
             branding: {
-                logo: 'https://depressed7kk1d.github.io/idDuqpUKiK_logos.png',
-                name: 'Алгоритмика Владивосток',
-                welcomeText: 'Здраствуйте 👋, как я могу вам помочь?',
-                responseTimeText: 'Я отвечаю мгновенно'
+                logo: 'https://www.nocodecreative.io/wp-content/uploads/2025/01/cropped-New-Logo.png',
+                name: 'nocodecreative.io',
+                welcomeText: 'Hi 👋, how can we help?',
+                responseTimeText: 'We typically respond right away'
             },
             style: {
                 primaryColor: '#854fff',
                 secondaryColor: '#6b3fd4',
                 position: 'right',
-                backgroundColor: '#ffffff',
-                fontColor: '#333333'
+                backgroundColor: '#ffffff', //Background color of the chat widget
+                fontColor: '#333333' //Text color for messages and interface
             }
         };
     </script>
-
-    <!-- Пример подключения скрипта для виджета -->
-    <script src="https://cdn.jsdelivr.net/gh/depressed7kk1d/my-chat-widget@c6a53d3/chat-widget.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
 </body>
-
 </html>
